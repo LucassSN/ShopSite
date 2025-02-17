@@ -1,19 +1,21 @@
 import './Login.css';
-const LoginPage = ()=>{
-  return(
-    <div className = "main">
+const LoginPage = () => {
+  return (
+    <div className="main">
+      <form action="">
 
-    <div>ShopSite</div>
-    <label>Usuario</label>
-    <input type="text"></input><br/><br/>
-    <label>Senha</label>
-    <input type="password"></input><br />
-    <button>Login</button>
-
-
+        <h1>ShopSite</h1>
+        <div className="input-box">
+          <input type="text" placeholder='Usuario'required></input>
+        </div>
+        <div className="input-box">
+          <input type="password" placeholder='Senha' required></input>
+        </div>
+        <button type="submit">Login</button>
+      </form>
 
     </div>
-   
+
   )
 }
 
